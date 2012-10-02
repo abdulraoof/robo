@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Handy Robo by abdulraoof</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Handy Robo</h1>
+        <p>Gesture controlled robot from scratch</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/abdulraoof/robo" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/abdulraoof/robo/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/abdulraoof/robo/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <p>This project is to implement a gesture controlled hardware scheme which can be used to control the actions performed by a robotic. With the help of this scheme one can pose the hand gesture in the vision range of the robot and based on this notation, desired action is performed by the robotic system. This can be implemented in three phase. In first phase using a simple video camera is used to extract the gesture which in the range of the robot. This video is given as computer input. In second phase, the processing of video stream can be done. This phase can be completed with the help of Matlab. Using Matlab feature extraction and pattern recognition can be completed. So after this phase the extracted gesture is identified. In third and last phase the information regarding the identified gesture used to control the robot. The communication can be done serially and the robot responds based on the received information. Real time hand tracking scheme can be used for the gesture recognition, i.e. if a particular gesture is available in the vision range of robot for particular time camera capture the gesture. The desired object is extracted from the background and hand is detected using its statistical properties. Extracted hand gesture is matched with stored data base of hand gesture using pattern matching. Corresponding to the matched gesture action is performed by the robot.</p>
+
+<p>Notes:</p>
+
+<ol>
+<li><p>You should setup the MATLAB Support package for Arduino to setup this project. Find it [here (<a href="http://www.mathworks.com/matlabcentral/fileexchange/32374-matlab-support-package-for-arduino-aka-arduinoio-package">http://www.mathworks.com/matlabcentral/fileexchange/32374-matlab-support-package-for-arduino-aka-arduinoio-package</a>)
+MATLAB support package for Arduino comes with a server program <strong>adiosrv.pde</strong> that can be downloaded on the Arduino board. Once downloaded, the <strong>adiosrv.pde</strong> will:
+Wait and listen for MATLAB commands
+Upon receiving MATLAB command, execute and return the result
+The steps I performed to write/download the server program to Arduino board were as following:
+Open Arduino IDE
+Select the adiosrv.pde file by navigating through File &gt; Open in the IDE
+Click the Upload button</p></li>
+<li><p>According to the environment conditions the result should vary. You are required to adjust the correlation thresholds of *<em>RealTimeTracking.m *</em></p></li>
+</ol><p>For deatailed report : <a href="http://gesturecontrolledrobot.blogspot.in">http://gesturecontrolledrobot.blogspot.in</a></p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/abdulraoof">abdulraoof</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
