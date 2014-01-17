@@ -8,26 +8,26 @@ q2=240;
 q3=1;
 q4=240;
 for w=1:240 %search for the vertical cropping boundary
-if (columnsum(1,w)>=10)
-q1=w;
-break;
-end
+  if (columnsum(1,w)>=10)
+    q1=w;
+    break;
+  end
 end
 for w=q1:240 %search for the vertical cropping boundary
-if (columnsum(1,w)>=10)
-q2=w;
-end
+  if (columnsum(1,w)>=10)
+    q2=w;
+  end
 end
 for w=1:240 %search for the horizontal cropping boundary
-if (rowsum(1,w)>=10)
-q3=w;
-break;
-end
+  if (rowsum(1,w)>=10)
+    q3=w;
+    break;
+  end
 end
 for w=q3:240 %search for the horizontal cropping boundary
-if (rowsum(1,w)>=50)
-q4=w;
-end
+  if (rowsum(1,w)>=50)
+    q4=w;
+  end
 end
 %crop the image between boundaries and resize to original
 imgout=cropimg(q3:q4,q1:q2);
